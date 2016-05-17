@@ -6,7 +6,7 @@ RUN \
     	python3 -m ensurepip && \
     	rm -r /usr/lib/python*/ensurepip && \
     	pip3 install --upgrade pip setuptools && \
-    	rm -r /root/.cache
+    	rm -r /root/.cache && \
 	pip install aws-shell 
 
 WORKDIR /aws
